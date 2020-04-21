@@ -18,6 +18,34 @@ namespace ClassroomOne
 
     #endregion
 
+    #region Struct Declaration
+    
+    struct CartesianPoint 
+    {
+        public int X;
+        public int Y;
+        public event Action<int> PointChanged;
+
+        public CartesianPoint(int x, int y, Action<int> PointChanged)
+        {
+            X = x;
+            Y = y;
+            this.PointChanged = PointChanged;
+        }
+    }
+
+    #endregion
+
+    #region Enum Declaration
+    enum OrderStatus {
+        Started = 0,
+        PaymentPending = 1,
+        Confirmed = 2,
+        Rejected = 3,
+        Expired = 4
+    }
+    #endregion
+
     #region My program
     class Program
     {
