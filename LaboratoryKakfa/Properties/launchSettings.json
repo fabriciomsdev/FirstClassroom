@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LaboratoryKakfa": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
